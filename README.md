@@ -193,6 +193,7 @@ job-application-tracker/
 ├── docs/  
 ├── README.md  
 └── .gitignore
+```
 The structure may evolve as the project develops.
 
 ## Current Development Notes
