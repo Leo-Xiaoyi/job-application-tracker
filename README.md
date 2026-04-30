@@ -203,7 +203,7 @@ This project is currently in early development. The initial focus is to build a 
 ## Author
 
 - Leo Yu
-- GitHub: Leo-Xiaoyi
+- GitHub: Leo-Xiaoyi (https://github.com/Leo-Xiaoyi)
 - Location: New Zealand
 
 ---
