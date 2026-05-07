@@ -32,7 +32,8 @@
 
 ### Challenges
 
-- Learning how to structure a portfolio project professionally from the beginning
+- Balancing the handbook’s Week 0 template with a README that still explains setup and MVP scope in my own words
+- Deciding how much repository structure to create now versus adding `cli/`, `backend/`, and `frontend/` only when those weeks start
 
 ### Next Steps
 

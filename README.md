@@ -1,209 +1,119 @@
-# Job Application Tracker with AI Assistance
+# Job Application Tracker with AI Cover Letter Assistant
 
-A full-stack application for managing job applications, tracking application statuses, analysing job descriptions, and generating AI-assisted cover letter drafts.
-
-This project is being developed as a practical full-stack and AI application project, with a focus on realistic software engineering practices, clean project structure, and incremental delivery.
+A full-stack job application tracker designed to help job seekers manage applications, analyse job descriptions, and generate AI-assisted cover letter drafts.
 
 ## Project Status
 
-Current stage: **Planning and TypeScript CLI prototype**
+In active development.
 
-This repository is under active development. The first version focuses on manual job application tracking, followed by backend APIs, database integration, frontend dashboard, authentication, and AI-assisted features.
-
-## Why This Project
-
-Job searching often involves many applications across different platforms such as company websites, Seek, LinkedIn, Indeed, and recruiters. It can be difficult to track application status, notes, follow-ups, and job description requirements.
-
-This project aims to provide a practical tool for managing the job application process while demonstrating full-stack development and AI-assisted workflow design.
-
-The first version is intentionally manual-first rather than web-scraping-based, because many job platforms have login requirements, anti-scraping rules, CAPTCHA, and terms of service limitations.
-
-## Core Features
-
-### Version 1: Manual Job Application Tracking
-
-- Add a job application
-- Store company name, job title, job link, location, and application date
-- Track application status
-- Add notes for each application
-- Update application progress
-- Search and filter applications
-
-### Version 2: Full-Stack Web Application
-
-- REST API with Node.js and Express
-- PostgreSQL database with Prisma ORM
-- React / Next.js frontend dashboard
-- User authentication
-- Application detail pages
-- Status history and notes
-
-### Version 3: AI-Assisted Features
-
-- Paste a job description and extract key skills
-- Identify required and nice-to-have skills
-- Compare job requirements with user skills and projects
-- Generate AI-assisted cover letter drafts
-- Suggest follow-up actions
-
-### Future Extension: RAG and Agent-Style Workflow
-
-- Store resume, project descriptions, and previous cover letters
-- Retrieve relevant background information for each job application
-- Generate more tailored application materials
-- Provide an application preparation checklist
+Current phase: Week 0 - project setup and roadmap planning.
 
 ## Planned Tech Stack
 
-### Frontend
-
-- React
-- Next.js
-- Tailwind CSS
-
-### Backend
-
-- Node.js
-- Express
-- REST API
-
-### Database
-
+- TypeScript
+- React / Next.js
+- Node.js / Express
 - PostgreSQL
-- Prisma ORM
-
-### Authentication
-
-- JWT or session-based authentication
-
-### AI Integration
-
+- Prisma
+- REST API
+- Tailwind CSS
 - LLM API integration
-- Job description analysis
-- AI-assisted cover letter generation
-- Future RAG-style retrieval
+- Testing
+- Deployment
 
-### Tools
+## Planned Features
 
-- Git and GitHub
-- VS Code
-- Docker
-- Vercel
-- Render / Railway / Supabase / Neon
+- Add and manage job application records
+- Track application status
+- Store job descriptions and notes
+- Filter applications by status
+- Analyse job descriptions with AI
+- Generate AI-assisted cover letter drafts
 
-## Development Roadmap
+## Development Approach
 
-### Phase 0: Project Setup
+This project is being developed as a 12-week AI-assisted full-stack learning and portfolio project. The goal is to build practical software engineering skills while applying AI features to a real job-seeking workflow.
 
-- Create GitHub repository
-- Add project README
-- Set up project structure
-- Create GitHub Issues and Project Board
+## Current Progress
 
-### Phase 1: TypeScript CLI Prototype
+- [x] Repository created
+- [x] Initial roadmap planned
+- [ ] TypeScript data model
+- [ ] CLI prototype
+- [ ] Backend API
+- [ ] Database integration
+- [ ] Frontend dashboard
+- [ ] Authentication
+- [ ] AI assistant
+- [ ] Deployment
 
-- Learn and practise TypeScript basics
-- Create a simple command-line version
-- Add job application records
-- List saved applications
-- Update application status
-- Save data locally using JSON
+## Why manual-first (MVP scope)
 
-### Phase 2: Backend API
+The first version focuses on **manually entered** applications and notes. It does **not** scrape Seek, LinkedIn, or company sites, to avoid legal, reliability, and authentication issues while the core tracker and AI-assisted drafting features are built.
 
-- Set up Node.js and Express
-- Create REST API routes
-- Implement CRUD operations
-- Add validation and error handling
-- Test endpoints using Postman or Thunder Client
+## Roadmap document
 
-### Phase 3: Database Integration
+Detailed phases are in [`docs/roadmap.md`](docs/roadmap.md).
 
-- Set up PostgreSQL
-- Add Prisma ORM
-- Design application, note, and status history models
-- Connect backend API to the database
+## Target repository structure (from handbook; added week by week)
 
-### Phase 4: Frontend Dashboard
-
-- Set up React / Next.js
-- Create application list page
-- Create add/edit application form
-- Create application detail page
-- Add status and notes UI
-
-### Phase 5: Authentication
-
-- Add user registration and login
-- Protect API routes
-- Associate applications with users
-
-### Phase 6: Search, Filter, and UX Improvements
-
-- Filter by status
-- Search by company or job title
-- Sort by application date
-- Improve dashboard layout
-
-### Phase 7: AI Features
-
-- Add job description input
-- Extract skills from job descriptions
-- Generate cover letter drafts
-- Suggest missing skills and matching project experience
-
-### Phase 8: Testing and Documentation
-
-- Add backend tests
-- Add frontend component tests where appropriate
-- Improve README documentation
-- Add screenshots and demo instructions
-
-### Phase 9: Deployment
-
-- Deploy frontend
-- Deploy backend
-- Use hosted PostgreSQL database
-- Add environment variable documentation
-
-## Learning Goals
-
-Through this project, I aim to improve and demonstrate:
-
-- Full-stack application development
-- TypeScript and JavaScript engineering practice
-- REST API design
-- Database modelling
-- Authentication and user ownership
-- Clean GitHub workflow
-- Incremental project delivery
-- AI-assisted software application design
-
-## Repository Structure
-
-Planned structure:
-
-```text  
-job-application-tracker/  
-├── apps/  
-│   ├── frontend/  
-│   └── backend/  
-├── packages/  
-│   └── shared/  
-├── docs/  
-├── README.md  
+```text
+job-application-tracker/
+├── README.md
+├── docs/
+│   ├── roadmap.md
+│   ├── learning-log.md
+│   ├── architecture.md
+│   ├── api-design.md
+│   ├── database-design.md
+│   ├── ai-feature-notes.md
+│   └── deployment-notes.md
+├── cli/
+│   ├── src/
+│   ├── data/
+│   ├── package.json
+│   └── tsconfig.json
+├── backend/
+│   ├── src/
+│   │   ├── routes/
+│   │   ├── controllers/
+│   │   ├── services/
+│   │   ├── middleware/
+│   │   └── index.ts
+│   ├── prisma/
+│   │   └── schema.prisma
+│   ├── tests/
+│   ├── package.json
+│   └── tsconfig.json
+├── frontend/
+│   ├── src/
+│   │   ├── app/
+│   │   ├── components/
+│   │   ├── lib/
+│   │   └── types/
+│   ├── package.json
+│   └── tsconfig.json
+├── screenshots/
 └── .gitignore
 ```
-The structure may evolve as the project develops.
 
-## Current Development Notes
+Week 0 currently includes the root TypeScript entrypoint under `src/` (see **Getting Started**). `cli/`, `backend/`, and `frontend/` will appear in later weeks—do not create the full tree in Week 0.
 
-This project is currently in early development. The initial focus is to build a working TypeScript CLI version before moving into backend, database, frontend, and AI features.
+## Getting Started
+
+Requirements: **Node.js 18+** and **npm**.
+
+```bash
+git clone https://github.com/Leo-Xiaoyi/job-application-tracker.git
+cd job-application-tracker
+npm install
+npm run dev
+```
+
+You should see: `Job Application Tracker - Week 0 setup complete.`
 
 ## Author
 
 - Leo Yu
-- GitHub: Leo-Xiaoyi (https://github.com/Leo-Xiaoyi)
+- GitHub: [Leo-Xiaoyi](https://github.com/Leo-Xiaoyi)
 - Location: New Zealand
-
----
