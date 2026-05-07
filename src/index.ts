@@ -1,0 +1,1 @@
+console.log("Job Application Tracker - Week 0 setup complete.");
