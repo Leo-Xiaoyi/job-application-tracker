@@ -40,3 +40,22 @@
 - Learn TypeScript fundamentals
 - Define the job application data model
 - Build the first CLI prototype
+
+## Week 0 Update
+
+### What I learned
+
+- I learned the role of README, docs, src, package.json, tsconfig.json, and .gitignore.
+- I learned the difference between npm run dev and npm run typecheck.
+- I learned that TypeScript can define object shapes using custom types.
+- I learned that GitHub issues can represent small development tasks.
+
+### What I practiced
+
+- I created a simple JobApplication type.
+- I tested TypeScript type checking by intentionally creating and fixing a type error.
+
+### What I still need to understand
+
+- How to organize TypeScript code across multiple files.
+- How to build the first CLI command for adding job applications.

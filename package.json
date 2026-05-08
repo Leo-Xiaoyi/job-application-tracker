@@ -4,7 +4,8 @@
   "private": true,
   "description": "12-week AI-assisted full-stack portfolio project",
   "scripts": {
-    "dev": "tsx src/index.ts"
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "tsx": "^4.20.0",
