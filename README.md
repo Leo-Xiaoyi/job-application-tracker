@@ -6,7 +6,7 @@ A full-stack job application tracker designed to help job seekers manage applica
 
 In active development.
 
-Current phase: Week 0 - project setup and roadmap planning.
+Current phase: Week 1 - TypeScript data model
 
 ## Planned Tech Stack
 
@@ -38,7 +38,7 @@ This project is being developed as a 12-week AI-assisted full-stack learning and
 
 - [x] Repository created
 - [x] Initial roadmap planned
-- [ ] TypeScript data model
+- [x] TypeScript data model
 - [ ] CLI prototype
 - [ ] Backend API
 - [ ] Database integration
@@ -111,6 +111,12 @@ npm run dev
 ```
 
 You should see: `Job Application Tracker - Week 0 setup complete.`
+
+## Week 1 Progress
+
+- Defined the initial TypeScript data model for job applications
+- Added application status types
+- Created sample job application data
 
 ## Author
 
